@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Diabetes Dashboard</title>
+
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="screen">
+
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css" media="screen">
+
+  </head>
+
+  <body>
+    <!-- Start of navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid navbar-custom">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="col-xs-9 phone-nav">
+              <a class="navbar-brand" href="#" id="logo">Diabetes Dashboard</a>
+            </div>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right navbar-right-custom">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href = "../index.html">Home</a></li>
+                  <li><a>Symptom Checker</a></li>
+                  <li><a href="graphs.html">Diabetes Insights</a></li>
+                  <li><a href="about_the_data.html">About the Analysis</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- End of navbar -->
+
+    <!-- Start of content-->
+    <div class="container">
+      <section class="row">
+        <div class="col-md-12">
+          <article class="description-content">
+            <h1 class="description-header">Symptom Checker</h1>
+            <hr class="description-hr"/>
+            <p>Text</p>
+            <p>Text</p>
+            <form>
+              <label for="age">Age:</label>
+              <input type="text" id="age" name="age"><br>
+            </form>
+            <p>Gender</p>
+            <form>
+              <input type="radio" id="male" name="gender" value=1>
+              <label for="male">Male</label><br>
+              <input type="radio" id="female" name="gender" value=0>
+              <label for="female">Female</label><br>
+            </form>
+            <p>Polyuria</p>
+            <form>
+              <input type="radio" id="yes" name="polyuria" value=1>
+              <label for="yes">Yes</label><br>
+              <input type="radio" id="no" name="polyuria" value=0>
+              <label for="no">No</label><br>
+            </form>
+            <p>Polydipsia</p>
+            <form>
+              <input type="radio" id="yes" name="polydipsia" value=1>
+              <label for="yes">Yes</label><br>
+              <input type="radio" id="no" name="polydipsia" value=0>
+              <label for="no">No</label><br>
+            </form>
+            <p>Sudden Weight Loss</p>
+            <form>
+              <input type="radio" id="yes" name="weight_loss" value=1>
+              <label for="yes">Yes</label><br>
+              <input type="radio" id="no" name="weight_loss" value=0>
+              <label for="no">No</label><br>
+            </form>
+            <p>Weakness</p>
+            <form>
+              <input type="radio" id="yes" name="weakness" value=1>
+              <label for="yes">Yes</label><br>
+              <input type="radio" id="no" name="weakness" value=0>
+              <label for="no">No</label><br>
+            </form>
+            <p>Polyphagia</p>
+            <form>
+              <input type="radio" id="yes" name="polyphagia" value=1>
+              <label for="yes">Yes</label><br>
+              <input type="radio" id="no" name="polyphagia" value=0>
+              <label for="no">No</label><br>
+            </form>
+            <p>Genital Thrush</p>
+            <form>
+              <input type="radio" id="yes" name="thrush" value=1>
+              <label for="yes">Yes</label><br>
+              <input type="radio" id="no" name="thrush" value=0>
+              <label for="no">No</label><br>
+            </form>
+            <p>Visual Blurring</p>
+            <form>
+              <input type="radio" id="yes" name="blurring" value=1>
+              <label for="yes">Yes</label><br>
+              <input type="radio" id="no" name="blurring" value=0>
+              <label for="no">No</label><br>
+            </form>
+            <p>Itching</p>
+            <form>
+              <input type="radio" id="yes" name="itching" value=1>
+              <label for="yes">Yes</label><br>
+              <input type="radio" id="no" name="itching" value=0>
+              <label for="no">No</label><br>
+            </form>
+            <p>Irritability</p>
+            <form>
+              <input type="radio" id="yes" name="irritability" value=1>
+              <label for="yes">Yes</label><br>
+              <input type="radio" id="no" name="irritability" value=0>
+              <label for="no">No</label><br>
+            </form>
+            <p>Delayed Healing</p>
+            <form>
+              <input type="radio" id="yes" name="healing" value=1>
+              <label for="yes">Yes</label><br>
+              <input type="radio" id="no" name="healing" value=0>
+              <label for="no">No</label><br>
+            </form>
+            <p>Partial Paresis</p>
+            <form>
+              <input type="radio" id="yes" name="paresis" value=1>
+              <label for="yes">Yes</label><br>
+              <input type="radio" id="no" name="paresis" value=0>
+              <label for="no">No</label><br>
+            </form>
+            <p>Muscle Stiffness</p>
+            <form>
+              <input type="radio" id="yes" name="stiffness" value=1>
+              <label for="yes">Yes</label><br>
+              <input type="radio" id="no" name="stiffness" value=0>
+              <label for="no">No</label><br>
+            </form>
+            <p>Alopecia</p>
+            <form>
+              <input type="radio" id="yes" name="alopecia" value=1>
+              <label for="yes">Yes</label><br>
+              <input type="radio" id="no" name="alopecia" value=0>
+              <label for="no">No</label><br>
+            </form>
+            <p>Obesity</p>
+            <form>
+              <input type="radio" id="yes" name="obesity" value=1>
+              <label for="yes">Yes</label><br>
+              <input type="radio" id="no" name="obesity" value=0>
+              <label for="no">No</label><br>
+            </form>
+            
+
+          </article>
+        </div>
+      </section>
+    </div>
+    <!-- End of content-->
+
+    <footer class="footer navbar-fixed-bottom">
+      <div class="two-toned-footer-color"></div>
+      <p class="text-muted text-muted-footer text-center">
+         Created by Maddy, Marcus, and Shujun
+      </p>
+    </footer>
+    <!-- End of footer -->
+
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
