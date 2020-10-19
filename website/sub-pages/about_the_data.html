@@ -61,11 +61,55 @@
           <article class="description-content">
             <h1 class="description-header">About the Data</h1>
             <hr class="description-hr"/>
-            <img src="../assets/images/devices.PNG" alt="" id="description-image"/>
-            <p>Text</p>
-            <p>Text</p>
+            <p>The dataset used for the machine learning model is "<a herf='https://archive.ics.uci.edu/ml/datasets/Early+stage+diabetes+risk+prediction+dataset.'>Early stage diabetes risk prediction dataset</a>”. The dataset tracks age, gender, and 14 symptoms of diabetes, along with the diabetes diagnosis for 520 individuals. </p>
+            <p>In order to determine which models were best predicted the diagnosis, we tested four models with iterated with 10 different random states. Metrics were calculated for each classifer per run and then the mean was reported out, as shown below. <br><br> The Random Forest Classifier outperformed the other 3 models in all 3 reported metrics, this is the model we used for our sypmtom checker.
           </article>
         </div>
+        <div class='col-md-6'>
+          <article class="description-content">
+            <h2 class='description-header'>Gaussian NB</h2>
+            <hr class='description-hr'><a herf='https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.GaussianNB.html?highlight=gaussian%20nb#sklearn.naive_bayes.GaussianNB'><b>Gaussian Naïve-Bayes</b></a>: Can perform online updates to model parameters via partial_fit. For details on algorithm used to update feature means and variance online, see <a herf = '-%09http:/i.stanford.edu/pub/cstr/reports/cs/tr/79/773/CS-TR-79-773.pdf'>Stanford CS tech report STAN-CS-79-773</a> by Chan, Golub, and LeVeque.<br>
+            <ul><br>
+              <li><b>Precision:</b>90.81</li>
+              <li><b>F1 Score:</b>90.80</li>
+              <li><b>Recall Score:</b>90.90</li>
+            </ul></hr><br>
+          </article>
+        </div>
+        <div class='col-md-6'>
+          <article class="description-content">
+            <h2 class='description-header'>Random Forest Classifier</h2>
+            <hr class='description-hr'><a herf='https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html?highlight=random%20forest#sklearn.ensemble.RandomForestClassifier'><b>Random Forest Classifier: </b></a>A random forest is a meta estimator that fits a number of decision tree classifiers on various sub-samples of the dataset and uses averaging to improve the predictive accuracy and control over-fitting. The sub-sample size is controlled with the max_samples parameter if bootstrap=True (default), otherwise the whole dataset is used to build each tree. <br>
+            <ul><br>
+              <li><b>Precision:</b>99.18</li>
+              <li><b>F1 Score:</b>98.63</li>
+              <li><b>Recall Score:</b>98.11</li>
+            </ul></hr>
+          </article>
+        </div>
+        <div class='col-md-6'>
+          <article class="description-content">
+            <h2 class='description-header'>Linear Regression</h2>
+            <hr class='description-hr'><a herf='https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html?highlight=linear%20regression#sklearn.linear_model.LinearRegression'><b>Linear Regression</b></a>LinearRegression fits a linear model with coefficients w = (w1, …, wp) to minimize the residual sum of squares between the observed targets in the dataset, and the targets predicted by the linear approximation. <br>
+            <ul><br>
+              <li><b>Precision:</b>94.72</li>
+              <li><b>F1 Score:</b>93.73</li>
+              <li><b>Recall Score:</b>92.90</li>
+            </ul></hr><br> <br><br>
+          </article>
+        </div>
+        <div class='col-md-6'>
+          <article class="description-content">
+            <h2 class='description-header'>Linear SVC</h2>
+            <hr class='description-hr'><a herf='https://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html?highlight=linearsvc#sklearn.svm.LinearSVC'><b>Linear Support Vector Classification: </b></a>Similar to SVC with parameter kernel=’linear’, but implemented in terms of liblinear rather than libsvm, so it has more flexibility in the choice of penalties and loss functions and should scale better to large numbers of samples. This class supports both dense and sparse input and the multiclass support is handled according to a one-vs-the-rest scheme. <br>
+            <ul><br>
+              <li><b>Precision:</b>94.98</li>
+              <li><b>F1 Score:</b>93.97</li>
+              <li><b>Recall Score:</b>93.11</li>
+            </ul></hr>
+          </article>
+        </div>
+
       </section>
     </div>
     <!-- End of content-->
