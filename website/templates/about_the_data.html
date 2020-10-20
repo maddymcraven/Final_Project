@@ -8,11 +8,8 @@
 
     <title>Diabetes Dashboard</title>
 
-    <!-- Boostrap Stylesheet -->
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="screen">
-
-    <!-- Our own CSS stylesheet -->
-    <link rel="stylesheet" href="../assets/css/styles.css" media="screen">
+    <link href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename = 'css/styles.css')}}" rel="stylesheet">
 
   </head>
 
@@ -41,10 +38,10 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href = "../index.html">Home</a></li>
-                  <li><a href="symptom_checker.html">Symptom Checker</a></li>
-                  <li><a href="graphs.html">Diabetes Insights</a></li>
-                  <li><a>About the Analysis</a></li>
+                  <li><a href = "http://127.0.0.1:5000/index">Home</a></li>
+                  <li><a href="http://127.0.0.1:5000/symptom_checker">Symptom Checker</a></li>
+                  <li><a href="http://127.0.0.1:5000/graphs">Diabetes Insights</a></li>
+                  <li><a href="http://127.0.0.1:5000/about_the_data">About the Analysis</a></li>
                 </ul>
               </li>
             </ul>

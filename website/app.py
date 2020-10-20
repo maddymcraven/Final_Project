@@ -27,10 +27,22 @@ app = Flask(__name__)
 def root():
     return render_template('index.html')
 
+@app.route('/index')
+def index():
+    return render_template('index.html')
+
 
 @app.route('/about_the_data')
 def about_the_data():
     return render_template('about_the_data.html')
+
+@app.route('/symptom_checker')
+def symptom_checker():
+    return render_template('symptom_checker.html')
+
+@app.route('/graphs')
+def graphs():
+    return render_template('graphs.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
