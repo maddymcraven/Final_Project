@@ -14,7 +14,6 @@
   </head>
 
   <body>
-    <!-- Start of navbar -->
     <nav class="navbar navbar-default">
       <div class="container-fluid navbar-custom">
 
@@ -49,170 +48,62 @@
         </div>
       </div><!-- /.container-fluid -->
     </nav>
-    <!-- End of navbar -->
-
-    <!-- Start of content-->
+    <!-- End of navbar -->              
     <div class="container">
       <section class="row">
         <div class="col-md-12">
-          <!-- <article class="description-content">
-            <h1 class="description-header">Symptom Checker</h1>
+          <article class="description-content">
+            <h1 class="description-header">About Symptom Checker</h1>
             <hr class="description-hr"/>
-            <p>Text</p>
-            <p>Text</p>
-            <form>
-              <label for="age">Age:</label>
-              <input type="text" id="age" name="age"><br>
+            <p> Will be about the symptom checker </p>
+            
+          </article>
+        </div>
+        <div class='col-md-6'>
+          <article class="description-content">
+            <h2 class='description-header'>Form</h2>
+            <hr class='description-hr'>
+            <form action="/action_page" method="post">
+              <label for="Age"> Age (years): </label>
+              <input type="number" name='Age'><br>
+              <label for="Gender"> Male (Female=blank)</label>
+              <input type="checkbox" name="Gender" value="1"><br>
+              <label for="Polyuria"> Polyuria symptom</label>
+              <input type="checkbox" name="Polyuria" value="1"><br>
+              <label for="Polydipsia"> Polydipsia symptom</label>
+              <input type="checkbox" name="Polydipsia" value="1"><br>
+              <label for="sudden weight loss"> Sudden weight loss symptom</label>
+              <input type="checkbox" name="weight loss" value="1"><br>
+              <label for="weakness"> Weakness symptom</label>
+              <input type="checkbox" name="weakness" value="1"><br>
+              <label for="Polyphagia"> Polyphagia symptom</label>
+              <input type="checkbox" name="Polyphagia" value="1"><br>
+              <label for="Genital thrush"> Genital thrush symptom</label>
+              <input type="checkbox" name="Genital thrush" value="1"><br>
+              <label for="visual blurring"> Visual blurring symptom</label>
+              <input type="checkbox" name="visual blurring" value="1"><br>
+              <label for="Itching"> Itching symptom</label>
+              <input type="checkbox" name="Itching" value="1"><br>
+              <label for="Irritability"> Irritability symptom</label>
+              <input type="checkbox" name="Irritability" value="1"><br>
+              <label for="delayed healing"> Delayed healing symptom</label>
+              <input type="checkbox" name="delayed healing" value="1"><br>
+              <label for="Partial paresis"> partial paresis symptom</label>
+              <input type="checkbox" name="partial paresis" value="1"><br>
+              <label for="Muscle stiffness"> Polyuriamuscle stiffness symptom</label>
+              <input type="checkbox" name="muscle stiffness" value="1"><br>
+              <label for="Alopecia"> Alopecia symptom</label>
+              <input type="checkbox" name="Alopecia" value="1"><br>
+              <label for="Obesity"> Obesity symptom</label>
+              <input type="checkbox" name="Obesity" value="1"><br><br>
+              <input type="submit" value="Submit">
             </form>
-            <p>Gender</p>
-            <form>
-              <input type="radio" id="male" name="gender" value=1>
-              <label for="male">Male</label><br>
-              <input type="radio" id="female" name="gender" value=0>
-              <label for="female">Female</label><br>
-            </form>
-            <p>Polyuria</p>
-            <form>
-              <input type="radio" id="yes" name="polyuria" value=1>
-              <label for="yes">Yes</label><br>
-              <input type="radio" id="no" name="polyuria" value=0>
-              <label for="no">No</label><br>
-            </form>
-            <p>Polydipsia</p>
-            <form>
-              <input type="radio" id="yes" name="polydipsia" value=1>
-              <label for="yes">Yes</label><br>
-              <input type="radio" id="no" name="polydipsia" value=0>
-              <label for="no">No</label><br>
-            </form>
-            <p>Sudden Weight Loss</p>
-            <form>
-              <input type="radio" id="yes" name="weight_loss" value=1>
-              <label for="yes">Yes</label><br>
-              <input type="radio" id="no" name="weight_loss" value=0>
-              <label for="no">No</label><br>
-            </form>
-            <p>Weakness</p>
-            <form>
-              <input type="radio" id="yes" name="weakness" value=1>
-              <label for="yes">Yes</label><br>
-              <input type="radio" id="no" name="weakness" value=0>
-              <label for="no">No</label><br>
-            </form>
-            <p>Polyphagia</p>
-            <form>
-              <input type="radio" id="yes" name="polyphagia" value=1>
-              <label for="yes">Yes</label><br>
-              <input type="radio" id="no" name="polyphagia" value=0>
-              <label for="no">No</label><br>
-            </form>
-            <p>Genital Thrush</p>
-            <form>
-              <input type="radio" id="yes" name="thrush" value=1>
-              <label for="yes">Yes</label><br>
-              <input type="radio" id="no" name="thrush" value=0>
-              <label for="no">No</label><br>
-            </form>
-            <p>Visual Blurring</p>
-            <form>
-              <input type="radio" id="yes" name="blurring" value=1>
-              <label for="yes">Yes</label><br>
-              <input type="radio" id="no" name="blurring" value=0>
-              <label for="no">No</label><br>
-            </form>
-            <p>Itching</p>
-            <form>
-              <input type="radio" id="yes" name="itching" value=1>
-              <label for="yes">Yes</label><br>
-              <input type="radio" id="no" name="itching" value=0>
-              <label for="no">No</label><br>
-            </form>
-            <p>Irritability</p>
-            <form>
-              <input type="radio" id="yes" name="irritability" value=1>
-              <label for="yes">Yes</label><br>
-              <input type="radio" id="no" name="irritability" value=0>
-              <label for="no">No</label><br>
-            </form>
-            <p>Delayed Healing</p>
-            <form>
-              <input type="radio" id="yes" name="healing" value=1>
-              <label for="yes">Yes</label><br>
-              <input type="radio" id="no" name="healing" value=0>
-              <label for="no">No</label><br>
-            </form>
-            <p>Partial Paresis</p>
-            <form>
-              <input type="radio" id="yes" name="paresis" value=1>
-              <label for="yes">Yes</label><br>
-              <input type="radio" id="no" name="paresis" value=0>
-              <label for="no">No</label><br>
-            </form>
-            <p>Muscle Stiffness</p>
-            <form>
-              <input type="radio" id="yes" name="stiffness" value=1>
-              <label for="yes">Yes</label><br>
-              <input type="radio" id="no" name="stiffness" value=0>
-              <label for="no">No</label><br>
-            </form>
-            <p>Alopecia</p>
-            <form>
-              <input type="radio" id="yes" name="alopecia" value=1>
-              <label for="yes">Yes</label><br>
-              <input type="radio" id="no" name="alopecia" value=0>
-              <label for="no">No</label><br>
-            </form>
-            <p>Obesity</p>
-            <form>
-              <input type="radio" id="yes" name="obesity" value=1>
-              <label for="yes">Yes</label><br>
-              <input type="radio" id="no" name="obesity" value=0>
-              <label for="no">No</label><br>
-            </form>
-
-          </article> -->
-
-            <article class="description-content row">
-              <div class="col-xs-12">
-                <h1 class="description-header">My Information and Symptoms</h1>
-                <hr class="description-hr"/>
-                <p class="description-text">Please input the following information and see the risk predictions.</p>
-                <h1>Information Input </h1>
-                <form action="/action_page.php" method="get">
-                  <label for="Age"> Age (years): </label>
-                  <input type="number"><br>
-                  <label for="Gender"> Male (Female=blank)</label>
-                  <input type="checkbox" name="Male (Female=blank)" value="1"><br>
-                  <label for="Polyuria"> Polyuria symptom</label>
-                  <input type="checkbox" name="Polyuria" value="1"><br>
-                  <label for="Polydipsia"> Polydipsia symptom</label>
-                  <input type="checkbox" name="Polydipsia" value="1"><br>
-                  <label for="sudden weight loss"> Sudden weight loss symptom</label>
-                  <input type="checkbox" name="sudden weight loss" value="1"><br>
-                  <label for="weakness"> Weakness symptom</label>
-                  <input type="checkbox" name="weakness" value="1"><br>
-                  <label for="Polyphagia"> Polyphagia symptom</label>
-                  <input type="checkbox" name="Polyphagia" value="1"><br>
-                  <label for="Genital thrush"> Genital thrush symptom</label>
-                  <input type="checkbox" name="Genital thrush" value="1"><br>
-                  <label for="visual blurring"> Visual blurring symptom</label>
-                  <input type="checkbox" name="visual blurring" value="1"><br>
-                  <label for="Itching"> Itching symptom</label>
-                  <input type="checkbox" name="Itching" value="1"><br>
-                  <label for="Irritability"> Irritability symptom</label>
-                  <input type="checkbox" name="Irritability" value="1"><br>
-                  <label for="delayed healing"> Delayed healing symptom</label>
-                  <input type="checkbox" name="delayed healing" value="1"><br>
-                  <label for="Partial paresis"> partial paresis symptom</label>
-                  <input type="checkbox" name="partial paresis" value="1"><br>
-                  <label for="Muscle stiffness"> Polyuriamuscle stiffness symptom</label>
-                  <input type="checkbox" name="muscle stiffness" value="1"><br>
-                  <label for="Alopecia"> Alopecia symptom</label>
-                  <input type="checkbox" name="Alopecia" value="1"><br>
-                  <label for="Obesity"> Obesity symptom</label>
-                  <input type="checkbox" name="Obesity" value="1"><br><br>
-                  <input type="submit" value="Submit">
-                </form>
+          </article>
+        </div>
+        <div class='col-md-6'>
+          <article class="description-content">
+            <h2 class='description-header'>Predicted Results</h2>
+            <hr class='description-hr'>{{outcome}} <br>
           </article>
         </div>
       </section>

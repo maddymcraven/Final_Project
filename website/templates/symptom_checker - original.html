@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Diabetes Dashboard</title>
+
+    <link href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename = 'css/styles.css')}}" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <!-- Start of navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid navbar-custom">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="col-xs-9 phone-nav">
+              <a class="navbar-brand" href="#" id="logo">Diabetes Dashboard</a>
+            </div>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right navbar-right-custom">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href = "http://127.0.0.1:5000/index">Home</a></li>
+                  <li><a href="http://127.0.0.1:5000/symptom_checker">Symptom Checker</a></li>
+                  <li><a href="http://127.0.0.1:5000/graphs">Diabetes Insights</a></li>
+                  <li><a href="http://127.0.0.1:5000/about_the_data">About the Analysis</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- End of navbar -->
+
+    <!-- Start of content-->
+    <div class="container">
+      <section class="row">
+        <!-- <div class="col-md-12"> -->
+
+          </article> -->
+
+          <article class="description-content row">
+            <div class="col-md-6">
+              <h1 class="description-header">My Information and Symptoms</h1>
+              <hr class="description-hr"/>
+              <p class="description-text">Please input the following information and see the risk predictions.</p>
+              <h1>Information Input</h1>                            
+              <form action="/action_page" method="post">
+                <label for="Age"> Age (years): </label>
+                <input type="number" name='Age'><br>
+                <label for="Gender"> Male (Female=blank)</label>
+                <input type="checkbox" name="Gender" value="1"><br>
+                <label for="Polyuria"> Polyuria symptom</label>
+                <input type="checkbox" name="Polyuria" value="1"><br>
+                <label for="Polydipsia"> Polydipsia symptom</label>
+                <input type="checkbox" name="Polydipsia" value="1"><br>
+                <label for="sudden weight loss"> Sudden weight loss symptom</label>
+                <input type="checkbox" name="weight loss" value="1"><br>
+                <label for="weakness"> Weakness symptom</label>
+                <input type="checkbox" name="weakness" value="1"><br>
+                <label for="Polyphagia"> Polyphagia symptom</label>
+                <input type="checkbox" name="Polyphagia" value="1"><br>
+                <label for="Genital thrush"> Genital thrush symptom</label>
+                <input type="checkbox" name="Genital thrush" value="1"><br>
+                <label for="visual blurring"> Visual blurring symptom</label>
+                <input type="checkbox" name="visual blurring" value="1"><br>
+                <label for="Itching"> Itching symptom</label>
+                <input type="checkbox" name="Itching" value="1"><br>
+                <label for="Irritability"> Irritability symptom</label>
+                <input type="checkbox" name="Irritability" value="1"><br>
+                <label for="delayed healing"> Delayed healing symptom</label>
+                <input type="checkbox" name="delayed healing" value="1"><br>
+                <label for="Partial paresis"> partial paresis symptom</label>
+                <input type="checkbox" name="partial paresis" value="1"><br>
+                <label for="Muscle stiffness"> Polyuriamuscle stiffness symptom</label>
+                <input type="checkbox" name="muscle stiffness" value="1"><br>
+                <label for="Alopecia"> Alopecia symptom</label>
+                <input type="checkbox" name="Alopecia" value="1"><br>
+                <label for="Obesity"> Obesity symptom</label>
+                <input type="checkbox" name="Obesity" value="1"><br><br>
+                <input type="submit" value="Submit">
+              </form>
+              <br>
+              Predicted result is {{outcome}}
+              <div class="col-md-6">
+
+                <!-- Result Output Area -->
+              <section id="imageNav-area">
+              <div class="imageNav-content">
+              <h2 class="imageNav-header">Predicted results</h2>
+                    <!-- <hr /> -->
+                {{outcome}}
+              </div>
+              </section>
+              </div>
+          
+        </article>
+        <!-- </div> -->
+      </section>
+    </div>
+    <!-- End of content-->
+
+    <footer class="footer navbar-fixed-bottom">
+      <div class="two-toned-footer-color"></div>
+      <p class="text-muted text-muted-footer text-center">
+         Created by Maddy, Marcus, and Shujun
+      </p>
+    </footer>
+    <!-- End of footer -->
+
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
