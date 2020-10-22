@@ -59,9 +59,20 @@
             <h1 class="description-header">About the Data</h1>
             <hr class="description-hr"/>
             <p>The dataset used for the machine learning model is "<a href='https://archive.ics.uci.edu/ml/datasets/Early+stage+diabetes+risk+prediction+dataset.'>Early stage diabetes risk prediction dataset</a>”. The dataset tracks age, gender, and 14 symptoms of diabetes, along with the diabetes diagnosis for 520 individuals. </p>
-            <p>In order to determine which models were best predicted the diagnosis, we tested four models with iterated with 10 different random states. Metrics were calculated for each classifer per run and then the mean was reported out, as shown below. <br><br> The Random Forest Classifier outperformed the other 3 models in all 3 reported metrics, this is the model we used for our sypmtom checker.
+            <p>In order to determine which models were best predicted the diagnosis, we tested five models with iterated with 10 different random states. Metrics were calculated for each classifer per run and then the mean was reported out, as shown below. <br><br> The Random Forest Classifier outperformed the other models in all 3 reported metrics, and was originally chosen as the model of choice. However, after exploring the model futher, we discovered that in some certain age brackets the model would predict positive cases when the user input zero symptoms. For this reason we conducted additional analysis on zero side effect scenarios, and chose the Perceptron model.
           </article>
         </div>
+        <article class="description-content">
+          <h1 class="description-header">Perceptron Model</h1>
+          <hr class="description-hr"/>
+          <p><a href='https://scikit-learn.org/stable/modules/linear_model.html#perceptron'><b>Perceptron Model</b></a>: The Perceptron is another simple classification algorithm suitable for large scale learning. By default: It does not require a learning rate. It is not regularized (penalized). It updates its model only on mistakes.<br> The last characteristic implies that the Perceptron is slightly faster to train than SGD with the hinge loss and that the resulting models are sparser.<br>
+            <ul><br>
+              <li><b>Precision:</b>86.96</li>
+              <li><b>F1 Score:</b>88.68</li>
+              <li><b>Recall Score:</b>92.97</li>
+            </ul></hr><br>
+        </article>
+      </div>
         <div class='col-md-6'>
           <article class="description-content">
             <h2 class='description-header'>Gaussian NB</h2>
